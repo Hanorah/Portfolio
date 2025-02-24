@@ -1,0 +1,89 @@
+'Log files:
+C:\Users\HP\Desktop\portfolio projects\PORTFOLIO SITE\clean\_logs\2025-02-24T19_13_11_811Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: react-ga@2.7.0
+Found: react@18.2.0
+node_modules/react
+  peerOptional react@"^18.0.0" from framer-motion@10.12.12
+  node_modules/framer-motion
+    framer-motion@"^10.12.12" from the root project
+  peer react@"^18.2.0" from next@13.4.2
+  node_modules/next
+    peer next@">=9.0.0" from next-pwa@5.6.0
+    node_modules/next-pwa
+      next-pwa@"^5.4.1" from the root project
+    next@"13.4.2" from the root project
+  peer react@">=16.0.0" from next-page-transitions@1.0.0-beta.2
+  node_modules/next-page-transitions
+    next-page-transitions@"^1.0.0-beta.2" from the root project
+  peer react@"^18.2.0" from react-dom@18.2.0
+  node_modules/react-dom
+    peerOptional react-dom@"^18.0.0" from framer-motion@10.12.12
+    node_modules/framer-motion
+      framer-motion@"^10.12.12" from the root project
+    peer react-dom@"^18.2.0" from next@13.4.2
+    node_modules/next
+      peer next@">=9.0.0" from next-pwa@5.6.0
+      node_modules/next-pwa
+        next-pwa@"^5.4.1" from the root project
+      next@"13.4.2" from the root project
+    peer react-dom@">=16.0.0" from next-page-transitions@1.0.0-beta.2
+    node_modules/next-page-transitions
+      next-page-transitions@"^1.0.0-beta.2" from the root project
+    peer react-dom@">=15.0.0" from react-transition-group@2.9.0
+    node_modules/react-transition-group
+      react-transition-group@"^2.3.1" from next-page-transitions@1.0.0-beta.2
+      node_modules/next-page-transitions
+        next-page-transitions@"^1.0.0-beta.2" from the root project
+    peer react-dom@">= 16.3.0" from styled-components@4.4.1
+    node_modules/styled-components
+      peer styled-components@">= 2" from babel-plugin-styled-components@2.1.3
+      node_modules/babel-plugin-styled-components
+        babel-plugin-styled-components@">= 1" from styled-components@4.4.1
+        dev babel-plugin-styled-components@"^2.1.3" from the root project
+      styled-components@"^4.4.1" from the root project
+    react-dom@"18.2.0" from the root project
+  peer react@">=15.0.0" from react-helmet@5.2.1
+  node_modules/react-helmet
+    react-helmet@"^5.2.1" from the root project
+  peer react@">=15.0.0" from react-transition-group@2.9.0
+  node_modules/react-transition-group
+    react-transition-group@"^2.3.1" from next-page-transitions@1.0.0-beta.2
+    node_modules/next-page-transitions
+      next-page-transitions@"^1.0.0-beta.2" from the root project
+  peer react@">= 16.8.0" from scoutbar@1.2.3
+  node_modules/scoutbar
+    scoutbar@"^1.1.9" from the root project
+  peer react@">= 16.3.0" from styled-components@4.4.1
+  node_modules/styled-components
+    peer styled-components@">= 2" from babel-plugin-styled-components@2.1.3
+    node_modules/babel-plugin-styled-components
+      babel-plugin-styled-components@">= 1" from styled-components@4.4.1
+      dev babel-plugin-styled-components@"^2.1.3" from the root project
+    styled-components@"^4.4.1" from the root project
+  peer react@">= 16.8.0 || 17.x.x || ^18.0.0-0" from styled-jsx@5.1.1
+  node_modules/styled-jsx
+    styled-jsx@"5.1.1" from next@13.4.2
+    node_modules/next
+      peer next@">=9.0.0" from next-pwa@5.6.0
+      node_modules/next-pwa
+        next-pwa@"^5.4.1" from the root project
+      next@"13.4.2" from the root project
+  react@"18.2.0" from the root project
+
+Could not resolve dependency:
+peer react@"^15.6.2 || ^16.0" from react-ga@2.7.0
+node_modules/react-ga
+  react-ga@"^2.7.0" from the root project
+
+Conflicting peer dependency: react@16.14.0
+node_modules/react
+  peer react@"^15.6.2 || ^16.0" from react-ga@2.7.0
+  node_modules/react-ga
+    react-ga@"^2.7.0" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.

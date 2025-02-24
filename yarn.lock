@@ -3865,11 +3865,6 @@ react-fast-compare@^2.0.2:
   resolved "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-2.0.4.tgz"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
 
-react-ga@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.npmjs.org/react-ga/-/react-ga-2.7.0.tgz"
-  integrity sha512-AjC7UOZMvygrWTc2hKxTDvlMXEtbmA0IgJjmkhgmQQ3RkXrWR11xEagLGFGaNyaPnmg24oaIiaNPnEoftUhfXA==
-
 react-helmet@^5.2.1:
   version "5.2.1"
   resolved "https://registry.npmjs.org/react-helmet/-/react-helmet-5.2.1.tgz"
@@ -3889,11 +3884,6 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
-
-react-progressive-image@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.npmjs.org/react-progressive-image/-/react-progressive-image-0.6.0.tgz"
-  integrity sha512-/yc8N3lHskPQkubm+QH5RIQHA89Sigv7p9UkvbHzKVE2OBb6njhmquk7GW/f2Y//mzk5DesFHN/hV5RWhd6IXA==
 
 react-side-effect@^1.1.0:
   version "1.2.0"
