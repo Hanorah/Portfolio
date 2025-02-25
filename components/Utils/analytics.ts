@@ -1,5 +1,3 @@
-import ReactGA from 'react-ga';
-
 export const initGA = () => {
   console.log(
     `%c
@@ -11,25 +9,25 @@ export const initGA = () => {
                 ||----w |
                 ||     || 
                 
-  Hey There i'm glad you liked the site and what to see whats going on, sure check the repo at https://github.com/hanorah/hanorah 
+  Hey there! I'm glad you liked the site. Check out the repo at https://github.com/hanorah/hanorah 
   
-  And dont forget to shoot me an email at hellohanorah@gmail.com if you need me to come do awesome work at your company`,
+  And don't forget to shoot me an email at hellohanorah@gmail.com if you need me to do awesome work at your company!`,
     'font-family:inherit'
   );
-  ReactGA.initialize('UA-128989337-1');
 };
 
 export const logPageView = () => {
-  ReactGA.set({ page: window.location.pathname });
-  ReactGA.pageview(window.location.pathname);
+  console.log('Page viewed:', window.location.pathname);
 };
+
 export const logEvent = (category = '', action = '') => {
   if (category && action) {
-    ReactGA.event({ category, action });
+    console.log(`Event logged: ${category} - ${action}`);
   }
 };
+
 export const logException = (description = '', fatal = false) => {
   if (description) {
-    ReactGA.exception({ description, fatal });
+    console.log(`Exception: ${description}, Fatal: ${fatal}`);
   }
 };
