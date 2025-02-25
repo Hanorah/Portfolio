@@ -6,7 +6,7 @@ import App from 'next/app';
 import React from 'react';
 import { PageTransition } from 'next-page-transitions';
 
-/* -------------------------- Internal Dependecies -------------------------- */
+/* -------------------------- Internal Dependencies -------------------------- */
 
 import AppContext from '../components/Utils/context';
 import {
@@ -22,28 +22,35 @@ export default class MyApp extends App {
       show: false,
       theme: loadState() ? true : false,
     };
+
+    // Bind methods
+    this.loadTheme = this.loadTheme.bind(this);
+    this.handleopen = this.handleopen.bind(this);
+    this.setTheme = this.setTheme.bind(this);
+    this.closeShow = this.closeShow.bind(this);
   }
 
-  loadTheme = () => {
+  loadTheme() {
     const { theme } = this.state;
-    if (theme == false) {
+    if (!theme) {
       clearState();
     } else {
       saveState(1);
     }
-  };
+  }
 
-  handleopen = () => {
-    const { show } = this.state;
-    this.setState({ show: !show });
-  };
-  setTheme = () => {
-    const { theme } = this.state;
-    this.setState({ theme: !theme });
-  };
-  closeShow = () => {
+  handleopen() {
+    this.setState({ show: !this.state.show });
+  }
+
+  setTheme() {
+    this.setState({ theme: !this.state.theme });
+  }
+
+  closeShow() {
     this.setState({ show: false });
-  };
+  }
+
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {};
 

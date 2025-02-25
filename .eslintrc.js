@@ -9,11 +9,13 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+  parser: '@babel/eslint-parser', // 🔥 Use Babel parser
   parserOptions: {
+    requireConfigFile: false, // 🔥 No need for a separate Babel config
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 2020, // 🔥 Supports modern JS (e.g., class fields)
     sourceType: 'module',
   },
   plugins: ['react', 'prettier'],
