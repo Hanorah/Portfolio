@@ -1,12 +1,54 @@
 const PROJECTS_DATA = [
   {
-    title: 'E-Commerce Website',
-    description: 'An E-commerce Application.',
+    title: 'Shadeum Clone',
+    description: 'Decentralization for everyone Fast, scalable, and forever fair.',
+    github: 'https://github.com/hanorah/shadeum',
+    about:
+      ' Shardeum is an EVM-based, truly decentralized L1.',
+    link: 'https://shardeum.org/',
+    imageUrl: 'https://i.ibb.co/T0XwFsQ/Screen-Recording-2020-05-06-at-3.gif',
+    type: ['open-source', 'tools', 'project'],
+    technologies: ['React', 'Redux Saga', 'Javascript', 'Firebase', 'Next.js'],
+  }, {
+    title: 'Fizzi',
+    description: 'Fizzi a fictional soda brand',
     github: 'https://github.com/hanorah',
     about:
-      'This is an e-commerce platform catered towards giving the best and fast experience for customers to buy products, we call it a frictionless process from start to finish.',
-    link: 'https://della-chi.vercel.app/index.html',
-    imageUrl: 'https://i.ibb.co/T0XwFsQ/Screen-Recording-2020-05-06-at-3.gif',
+      'Our soda is made with real fruit juice and a touch of cane sugar. We never use artificial sweeteners or high fructose corn syrup. Try all five flavors and find your favorite.',
+    link: 'https://cans-lwah.vercel.app/?vercelToolbarCode=lC1r4YL6l0YnY6n',
+    imageUrl: 'https://i.ibb.co/Xk7mZLf7/fizzi.jpg',
+    type: ['open-source', 'tools', 'project'],
+    technologies: ['React', 'Redux Saga', 'Javascript', 'Firebase', 'Next.js'],
+  }, {
+    title: 'IVY',
+    description: 'A healthcare website.',
+    github: 'https://github.com/hanorah',
+    about:
+      'Envision the comfort of knowing your loved one is in the hands of caring professionals who appreciate their individuality. Here, they are encouraged to maintain their cherished routines, savor their preferred meals, and engage in the hobbies they adore. ALL THIS AND MORE AWAITS YOUR LOVED ONE AT IVY HEALTH CARE LIMITED.',
+    link: 'https://hanorah.github.io/ivy/',
+    imageUrl: 'https://i.ibb.co/2YYdng95/ivy.jpg',
+    type: ['open-source', 'tools', 'project'],
+    technologies: ['React', 'Redux Saga', 'Javascript', 'Firebase', 'Next.js'],
+  },
+  {
+    title: 'Ochi Website-clone',
+    description: 'An Presentation agency.',
+    github: 'https://github.com/hanorah',
+    about:
+      'Ochi is a strategic presentation agency for forward-thinking businesses that need to raise funds, sell prod­ucts, ex­plain com­plex ideas, and hire great peo­ple.',
+    link: 'https://ochi-clone-theta.vercel.app/',
+    imageUrl: 'https://i.ibb.co/ZpRT31JN/ochi.jpg',
+    type: ['open-source', 'tools', 'project'],
+    technologies: ['React', 'Redux Saga', 'Javascript', 'Firebase', 'Next.js'],
+  },
+  {
+    title: 'Block chain technology',
+    description: 'Decentralized Data Solutions',
+    github: 'https://github.com/hanorah',
+    about:
+      'Integrate blockchain technology seamlessly into your projects, with minimal effort and maximum efficiency.',
+    link: 'https://block-chain-sable.vercel.app/',
+    imageUrl: 'https://i.ibb.co/jP5kJKRX/block.jpg',
     type: ['open-source', 'tools', 'project'],
     technologies: ['React', 'Redux Saga', 'Javascript', 'Firebase', 'Next.js'],
   },

@@ -154,10 +154,7 @@ export default class MyDocument extends Document {
             property="og:image"
             content="https://i.ibb.co/SxxqTRk/Mac-Book-Pro-16-10.png"
           />
-          <meta
-            name="apple-mobile-web-app-title"
-            content="Okosodo Hanorah"
-          />
+          <meta name="apple-mobile-web-app-title" content="Okosodo Hanorah" />
           <meta name="next-head-count" content="21" />
           <style
             // eslint-disable-next-line react/no-danger

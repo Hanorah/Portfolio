@@ -1,0 +1,50 @@
+'Log files:
+C:\Users\HP\Desktop\portfolio projects\PORTFOLIO SITE\clean\_logs\2025-02-25T08_33_59_430Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: eslint-config-airbnb@19.0.4
+Found: eslint@9.21.0
+node_modules/eslint
+  peer eslint@"^7.5.0 || ^8.0.0 || ^9.0.0" from @babel/eslint-parser@7.26.8
+  node_modules/@babel/eslint-parser
+    dev @babel/eslint-parser@"^7.26.8" from the root project
+  peer eslint@"^6.0.0 || ^7.0.0 || >=8.0.0" from @eslint-community/eslint-utils@4.4.1
+  node_modules/@eslint-community/eslint-utils
+    @eslint-community/eslint-utils@"^4.2.0" from eslint@9.21.0
+  peer eslint@">=3.14.1" from eslint-config-prettier@6.15.0
+  node_modules/eslint-config-prettier
+    dev eslint-config-prettier@"^6.9.0" from the root project
+  peer eslint@"^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9" from eslint-plugin-import@2.31.0
+  node_modules/eslint-plugin-import
+    peer eslint-plugin-import@"^2.25.3" from eslint-config-airbnb@19.0.4
+    node_modules/eslint-config-airbnb
+      dev eslint-config-airbnb@"^19.0.4" from the root project
+    peer eslint-plugin-import@"^2.25.2" from eslint-config-airbnb-base@15.0.0
+    node_modules/eslint-config-airbnb-base
+      eslint-config-airbnb-base@"^15.0.0" from eslint-config-airbnb@19.0.4
+      node_modules/eslint-config-airbnb
+        dev eslint-config-airbnb@"^19.0.4" from the root project
+    dev eslint-plugin-import@"^2.29.0" from the root project
+  peer eslint@">=5.0.0" from eslint-plugin-prettier@3.4.1
+  node_modules/eslint-plugin-prettier
+    dev eslint-plugin-prettier@"^3.1.2" from the root project
+  peer eslint@"^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0" from eslint-plugin-react-hooks@5.1.0
+  node_modules/eslint-plugin-react-hooks
+    dev eslint-plugin-react-hooks@"^5.1.0" from the root project
+  dev eslint@"^9.21.0" from the root project
+
+Could not resolve dependency:
+peer eslint@"^7.32.0 || ^8.2.0" from eslint-config-airbnb@19.0.4
+node_modules/eslint-config-airbnb
+  dev eslint-config-airbnb@"^19.0.4" from the root project
+
+Conflicting peer dependency: eslint@8.57.1
+node_modules/eslint
+  peer eslint@"^7.32.0 || ^8.2.0" from eslint-config-airbnb@19.0.4
+  node_modules/eslint-config-airbnb
+    dev eslint-config-airbnb@"^19.0.4" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.
