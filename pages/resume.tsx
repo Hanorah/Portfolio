@@ -13,7 +13,7 @@ import FooterLink from '../components/Footer';
 
 const Resume = () => {
   const resumeData =
-    '  https://www.canva.com/design/DAEEkidwA2Q/view?utm_content=DAEEkidwA2Q&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink';
+    '  https://www.canva.com/design/DAGggjTlUwg/pY7BufOc_9cpDcXuICWEaQ/view?utm_content=DAGggjTlUwg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4d0b3fde04';
 
   const previewData = `${resumeData.substr(
     0,
