@@ -3,8 +3,7 @@ const ARTICLE_DATA = [
     title: 'Vue.js Quickstart Tutorial by @code_wonders',
     description:
       'Vue is a progressive JavaScript framework that focuses on building user interf...',
-    link:
-      'https://dev.to/code_wonders/vuejs-2-quickstart-tutorial-by-hanorah-2972',
+    link: 'https://dev.to/code_wonders/vuejs-2-quickstart-tutorial-by-hanorah-2972',
     imageUrl:
       'https://i.ibb.co/2dZ7SPT/Screen-Shot-2019-11-25-at-1-15-37-AM.png',
     type: ['article'],
@@ -13,8 +12,7 @@ const ARTICLE_DATA = [
     title: 'Architecting Large-scale Javascript Applications',
     description:
       'In the past we have worked with large javascript applications and frameworks and it...',
-    link:
-      'https://www.canva.com/design/DAEP8soDA7Y/LhN_G3Z6vbratkAlslugaQ/view?utm_content=DAEP8soDA7Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
+    link: 'https://www.canva.com/design/DAEP8soDA7Y/LhN_G3Z6vbratkAlslugaQ/view?utm_content=DAEP8soDA7Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
     imageUrl: 'https://i.ibb.co/bscsh9q/image.png',
     type: ['article'],
   },
@@ -22,8 +20,7 @@ const ARTICLE_DATA = [
     title: 'A Chat App With Vuejs & NodeJs',
     description:
       'As part of my learning I decided to make some application and found interesti...',
-    link:
-      'https://medium.com/@hanorah/a-chat-app-with-vuejs-nodejs-325eac45e3a9',
+    link: 'https://medium.com/@hanorah/a-chat-app-with-vuejs-nodejs-325eac45e3a9',
     imageUrl: 'https://i.ibb.co/q5VVx07/nodejs-frameworks.png',
     type: ['article'],
   },
@@ -39,16 +36,14 @@ const ARTICLE_DATA = [
     title: 'What are these things called generator functions* ?',
     description:
       'In this lessons, we are going to explore one really great new ishhhh that was introduced int...',
-    link:
-      'https://dev.to/code_wonders/what-are-these-things-called-generator-functions-58nn',
+    link: 'https://dev.to/code_wonders/what-are-these-things-called-generator-functions-58nn',
     imageUrl: 'https://i.ibb.co/wc3m88r/cloud.png',
     type: ['article'],
   },
   {
     title: 'Let’s Create a Blog with React & Node @code_wonders',
     description: '',
-    link:
-      'https://medium.com/@hanorah/lets-create-a-blog-with-react-node-code-wonders-33978ed45e59',
+    link: 'https://medium.com/@hanorah/lets-create-a-blog-with-react-node-code-wonders-33978ed45e59',
     imageUrl: 'https://i.ibb.co/YT0XHgH/imageedit-7360658824.png',
     type: ['article'],
   },
@@ -72,8 +67,7 @@ const ARTICLE_DATA = [
     title: 'Reducing Motion to Improve Accessibility',
     description:
       'Hey friends! In this post, I am going to walk you through a newer medi...',
-    link:
-      'https://www.a11ywithlindsey.com/blog/reducing-motion-improve-accessibility',
+    link: 'https://www.a11ywithlindsey.com/blog/reducing-motion-improve-accessibility',
     imageUrl:
       'https://i.ibb.co/Jm2f3rY/Dream-Host-Accessibility-Tips-750x498.jpg',
     type: ['reading'],
@@ -89,8 +83,7 @@ const ARTICLE_DATA = [
   {
     title: 'Don’t be a Junior Developer: The Roadmap',
     description: '',
-    link:
-      'https://zerotomastery.io/blog/dont-be-a-junior-developer-the-roadmap',
+    link: 'https://zerotomastery.io/blog/dont-be-a-junior-developer-the-roadmap',
     imageUrl: 'https://i.ibb.co/t2wy0Qg/279547.jpg',
     type: ['reading'],
   },

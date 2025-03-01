@@ -20,9 +20,11 @@ import { BackLay, BodyStyling, Main } from './style';
 import { actions } from './data';
 import Head from 'next/head';
 
-const Layout: React.FC<PropsWithChildren<{
-  title?: string;
-}>> = ({ children, title = 'Home' }) => {
+const Layout: React.FC<
+  PropsWithChildren<{
+    title?: string;
+  }>
+> = ({ children, title = 'Home' }) => {
   const { theme, loadTheme, show, setTheme } = useContext(AppContext);
   const [skew, setSkew] = useState(10);
   const logPage = () => {
@@ -63,21 +65,18 @@ const Layout: React.FC<PropsWithChildren<{
   );
 };
 
-export const PageWrapper: React.FC<PropsWithChildren<{}> &
-  React.HTMLAttributes<HTMLDivElement>> = ({
-    children,
-    className = '',
-    ...rest
-  }) => {
-    return (
-      <section {...rest} id="main-content">
-        <div className={`container  ${className}`}>
-          <div className="row align-items-center justify-content-center">
-            <div className="col-md-10">{children}</div>
-          </div>
+export const PageWrapper: React.FC<
+  PropsWithChildren<{}> & React.HTMLAttributes<HTMLDivElement>
+> = ({ children, className = '', ...rest }) => {
+  return (
+    <section {...rest} id="main-content">
+      <div className={`container  ${className}`}>
+        <div className="row align-items-center justify-content-center">
+          <div className="col-md-10">{children}</div>
         </div>
-      </section>
-    );
-  };
+      </div>
+    </section>
+  );
+};
 
 export default Layout;

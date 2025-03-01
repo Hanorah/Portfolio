@@ -12,5 +12,12 @@ const nextConfig = {
     styledComponents: true, // Enables Next.js built-in styled-components support
   },
 };
+// const withPWA = require('next-pwa');
+
+module.exports = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+};
 
 module.exports = nextConfig;

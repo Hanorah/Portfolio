@@ -1,286 +1,57 @@
+/* -------------------------------------------------------------------------- */
+/*                            External Dependencies                           */
+/* -------------------------------------------------------------------------- */
+
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 import { arrayRandomItem } from 'codewonders-helpers';
 import { motion } from 'framer-motion';
-import Head from 'next/head';
+
+/* -------------------------- Internal Dependencies ------------------------- */
 
 import Layout, { PageWrapper } from '../components/Layout';
 import FooterLink from '../components/Footer';
+
 import { getTransitions } from '../components/Utils';
 
 const Home = () => {
-  const [color] = useState(arrayRandomItem(['#37609c', '#34c759'])); // Removed #5856d6
+  const [color] = useState(arrayRandomItem(['#37609c', '#34c759', '#5856d6']));
 
   return (
-    <>
-      <Head>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-        />
-      </Head>
-      <Layout>
-        <PageSection color={color}>
-          <PageWrapper>
-            <div className="content">
-              <article>
-                <motion.h1
-                  data-text="Looking for a Developer ?"
-                  className="intro__text"
-                  {...getTransitions(0.1)}
-                >
-                  <mark className="mark">Looking for a Developer ?</mark>
-                </motion.h1>
+    <Layout>
+      <PageSection color={color}>
+        <PageWrapper>
+          <article>
+            <motion.h1
+              data-text="Looking for a Developer ?"
+              className="intro__text"
+              {...getTransitions(0.1)}
+            >
+              <mark className="mark">Looking for a Developer ?</mark>
+            </motion.h1>
+            <motion.p {...getTransitions(0.5)}>
+              Hi, I'm Norah, a certified software engineer with a passion for crafting
+              responsive and dynamic interfaces. I'm skilled at Python, JavaScript, React,
+              and Tailwind CSS—all of which I use to create high-quality solutions that solve your problems.
+            </motion.p>
 
-                <motion.p {...getTransitions(0.5)}>
-                  Hi, I'm Norah, a certified software engineer with a passion for crafting responsive and dynamic interfaces.I'm skilled at Python, JavaScript, React, and Tailwind CSS all of which I use to help create high-quality solutions that solve your problems.
-                  {' '}
-                  <motion.p {...getTransitions(0.5)}>
-                    If you'd like to learn more check out my portfolio
-                    {' '}
-                    <Link href="/projects" aria-label="Go to Projects Page">
-                      &rarr;
-                    </Link>
-                  </motion.p>
+            <motion.p {...getTransitions(0.5)}>
+              If you'd like to learn more, check out my portfolio
+              <Link href="/projects" aria-label="Go to Projects Page"> &rarr; </Link>
+            </motion.p>
 
-                </motion.p>
+            <motion.p {...getTransitions(0.5)} style={{ textTransform: 'none' }}>
+              Ready to collaborate or discuss a project? Let's connect!
+              <a href="mailto:ksdnorah@gmail.com" style={{ textTransform: 'none', marginLeft: '5px' }}>
+                @ksdnorah@gmail.com
+              </a>
+            </motion.p>
+          </article>
 
-                <motion.p {...getTransitions(0.5)} style={{ textTransform: 'none' }}>
-                  Ready to collaborate or discuss a project? Let's connect!
-                  <a href="mailto:ksdnorah@gmail.com" style={{ textTransform: 'none', marginLeft: '5px' }} >@ksdnorah@gmail.com</a>
-                </motion.p>
-
-
-              </article>
-              <aside>
-                <video controls width="600">
-                  <source src="/path-to-your-video.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </aside>
-
-
-            </div>
-
-            <br />
-
-            {/* Card Section */}
-            <section className="card">
-              <div className="card__circle card__circle1"></div>
-              <div className="card__circle card__circle2"></div>
-
-              <div className="card__container bd-container">
-                <div className="card__glass">
-                  <video src="/Ask Question Landing page.mp4" className="card__iframe" muted loop autoPlay></video>
-                  <div className="card__data">
-                    <h3 className="card__title">PROJECT</h3>
-                    <span className="card__profession">WEBSITE</span>
-                  </div>
-
-
-                </div>
-
-                <div className="card__glass">
-                  <video src="/1.mp4" className="card__iframe" muted loop autoPlay></video>
-                  <div className="card__data">
-                    <h3 className="card__title">PROJECT</h3>
-                    <span className="card__profession">THE TAILORS SHOP</span>
-                  </div>
-
-
-                </div>
-
-                <div className="card__glass">
-                  <video src="/MO.mp4" className="card__iframe" muted loop autoPlay></video>
-                  <div className="card__data">
-                    <h3 className="card__title">PROJECT</h3>
-                    <span className="card__profession">E -COMMERCE WEBSITE</span>
-                  </div>
-
-                </div>
-              </div>
-            </section>
-
-            <motion.div {...getTransitions(0.7)}>
-              <FooterLink goto="/projects">See More Projects</FooterLink>
-            </motion.div>
-
-            <br /> <br /> <br />
-          </PageWrapper>
-        </PageSection>
-
-        {/* Include styles */}
-        <style jsx>{`
-          :root {
-            /*========== Colors ==========*/
-            --first-color: #4D49BF;
-            --second-color: #05DBF2;
-            --body-color: #DFE9F2;
-            --title-color: #1C1C22;
-            --text-color: #58576B;
-
-            /*========== Font and typography ==========*/
-            --body-font: 'Montserrat', sans-serif;
-            --normal-font-size: .938rem;
-            --h3-font-size: 1.125rem;
-            --small-font-size: .75rem;
-          }
-
-          @media screen and (min-width: 968px) {
-            :root {
-              --normal-font-size: 1rem;
-              --h3-font-size: 1.25rem;
-              --small-font-size: .813rem;
-            }
-          }
-
-          /*========== BASE ==========*/
-          *,
-          ::before,
-          ::after {
-            box-sizing: border-box;
-          }
-
-          body {
-            margin: 0;
-            padding: 0;
-            font-family: var(--body-font);
-            font-size: var(--normal-font-size);
-          }
-
-          h3 {
-            margin: 0;
-          }
-
-          a {
-            text-decoration: none;
-          }
-
-          .bd-container {
-            max-width: 968px;
-            width: calc(100% - 3rem);
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-          }
-
-          /*========== CARD GLASS ==========*/
-          .card {
-            position: relative;
-            overflow: hidden;
-            padding: 3rem 0;
-            background-color: var(--body-color);
-            border: none
-          }
-
-          .card__container {
-            display: grid;
-            gap: 1rem;
-            width: 100%;
-            
-          }
-
-          .card__glass {
-            position: relative;
-            overflow: hidden;
-            text-align: center;
-            padding: 2.5rem;
-            background: linear-gradient(130deg, rgba(251, 251, 254, .6), rgba(251, 251, 254, .2));
-            box-shadow: inset 2px 2px 1px rgba(251, 251, 254, .3), inset -2px -2px 1px rgba(251, 251, 254, .2);
-            border-radius: 1.5rem;
-            backdrop-filter: blur(10px);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 300px;
-            margin: 0 auto;
-          }
-
-          .card__iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 1rem;
-            object-fit: cover;
-          }
-
-          @media screen and (min-width: 768px) {
-            .card__glass {
-              max-width: 600px;
-              height: 400px;
-            }
-          }
-
-          .card__data {
-            margin-bottom: 1.5rem;
-            margin-top: 1.5rem;
-          }
-
-          .card__title {
-            font-size: var(--h3-font-size);
-            color: var(--title-color);
-            font-weight: 600;
-            margin-bottom: .25rem;
-          }
-
-          .card__profession {
-            font-size: var(--small-font-size);
-            color: var(--text-color);
-            font-weight: 500;
-          }
-
-        
-
-          .card__circle {
-            position: absolute;
-            width: 250px;
-            height: 250px;
-            background: linear-gradient(130deg, rgba(77, 73, 191, .8), rgba(255, 255, 255, .2));
-            border-radius: 50%;
-          }
-
-          .card__circle1 {
-            top: 20%;
-            left: -20%;
-          }
-
-          .card__circle2 {
-            bottom: -5%;
-            right: -25%;
-            background: linear-gradient(130deg, rgba(5, 219, 242, .8), rgba(255, 255, 255, .2));
-          }
-
-          @media screen and (min-width: 768px) {
-            .bd-container {
-              margin-left: auto;
-              margin-right: auto;
-            }
-
-            .card {
-              padding: 0;
-            }
-
-            .card__container {
-              height: 100vh;
-              grid-template-columns: repeat(3, 1fr);
-              align-content: center;
-            }
-
-            .card__circle1 {
-              left: 5%;
-              top: 12%;
-            }
-
-            .card__circle2 {
-              right: 8%;
-              bottom: 15%;
-            }
-          }
-        `}</style>
-      </Layout>
-    </>
+        </PageWrapper>
+      </PageSection>
+    </Layout>
   );
 };
 
@@ -289,31 +60,6 @@ const PageSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-  }
-
-  article {
-    flex: 1;
-    padding-right: 2rem; /* Space between article and image */
-  }
-
-  aside {
-    flex: 1;
-    max-width: 100%;
-  }
-
-  aside video {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem; /* Optional: rounded corners for the image */
-  }
-
   .intro__text {
     font-size: 2.275em;
     font-weight: 500;
@@ -475,14 +221,13 @@ const PageSection = styled.div`
       }
     }
   }
-
   p {
     font-size: calc(var(--font-sm) + 0.9px);
     line-height: 2.3;
     font-weight: 400;
     color: var(--article-color) !important;
 
-    a, button {
+    a,button {
       font-size: calc(var(--font-sm) + 0.9px);
       line-height: 20px;
       position: relative;
@@ -492,24 +237,35 @@ const PageSection = styled.div`
       text-transform: uppercase;
     }
   }
-
+  /* button {
+    font-size: var(--font-sm);
+    background: var(--button-index);
+    border: none;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    padding: 1px 12px;
+    &:hover {
+      background: ${(props) => props.color};
+      color: #fff;
+    }
+  } */
   @media (max-width: 585px) {
-    .content {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    article {
-      padding-right: 0;
-      margin-bottom: 2rem;
-    }
-
-    aside {
-      width: 100%;
-    }
+    margin: 3rem 0;
+    display: block;
+    min-height: 100%;
   }
-
+  @media (max-width: 989px) {
+    margin: 3rem 0;
+    display: block;
+  }
+  @media (max-width: 220px) {
+    margin: 3rem 0;
+    display: block;
+    min-height: 100%;
+  }
   @media (prefers-reduced-motion: reduce) {
+    /* Stop the animation */
+
     .intro__text {
       animation: none;
 
@@ -520,5 +276,4 @@ const PageSection = styled.div`
     }
   }
 `;
-
 export default Home;

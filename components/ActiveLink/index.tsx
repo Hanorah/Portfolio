@@ -13,8 +13,9 @@ interface IActiveLink {
   href: string;
 }
 
-const ActiveLink: React.FC<IActiveLink &
-  React.AnchorHTMLAttributes<HTMLAnchorElement>> = ({ children, ...props }) => {
+const ActiveLink: React.FC<
+  IActiveLink & React.AnchorHTMLAttributes<HTMLAnchorElement>
+> = ({ children, ...props }) => {
   const router = useRouter();
   let className = props.className || '';
 

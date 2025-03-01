@@ -44,7 +44,6 @@ export const actions = (theme: () => void) => [
         label: 'Playlist',
         href: '/about#playlist',
       }),
-
     ],
   }),
 

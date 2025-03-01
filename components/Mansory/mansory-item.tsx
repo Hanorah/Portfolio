@@ -204,7 +204,9 @@ const MansoryItemStyle = styled.div`
   div.content__slate {
     opacity: 0;
     transform: translateY(10%);
-    transition: opacity 300ms ease-in-out 0s, transform 300ms ease-in-out 0s;
+    transition:
+      opacity 300ms ease-in-out 0s,
+      transform 300ms ease-in-out 0s;
   }
 
   @media (max-width: 585px) {

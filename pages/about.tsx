@@ -18,10 +18,7 @@ const About = () => {
   return (
     <Layout title="About Me">
       <PageSection>
-        <PageWrapper
-          className="mb-5"
-          aria-label="#"
-        >
+        <PageWrapper className="mb-5" aria-label="#">
           <h1 className="intro__text">About Me.</h1> <br />
           <article>
             <ul className="timeline">
@@ -48,8 +45,16 @@ const About = () => {
                   View Github
                 </a>
                 <p>
-                  As a seasoned software engineer, I'm passionate about continuous learning and growth. Every day, I embrace new challenges and opportunities to expand my expertise in full-stack development and agile methodologies. With a strong foundation in JavaScript, Python, and React, I stay curious and adapt to emerging trends and technologies, ensuring my solutions are always innovative, scalable, and high-performing. Through data-driven insights and a commitment to excellence, I drive business outcomes and deliver exceptional results."
-
+                  As a seasoned software engineer, I'm passionate about
+                  continuous learning and growth. Every day, I embrace new
+                  challenges and opportunities to expand my expertise in
+                  full-stack development and agile methodologies. With a strong
+                  foundation in JavaScript, Python, and React, I stay curious
+                  and adapt to emerging trends and technologies, ensuring my
+                  solutions are always innovative, scalable, and
+                  high-performing. Through data-driven insights and a commitment
+                  to excellence, I drive business outcomes and deliver
+                  exceptional results."
                 </p>
               </li>
               <li>
@@ -68,7 +73,13 @@ const About = () => {
                   View Projects
                 </Link>
                 <p>
-                  I may not fit the traditional project manager mold, but my mix of research, design, and coordination skills lets me drive projects from concept to launch. I'm all about keeping the project vision intact throughout its journey, and I'm comfortable navigating both technical and project aspects. I've got a knack for turning ideas into successful projects, and I'm excited to bring my skills to the table.
+                  I may not fit the traditional project manager mold, but my mix
+                  of research, design, and coordination skills lets me drive
+                  projects from concept to launch. I'm all about keeping the
+                  project vision intact throughout its journey, and I'm
+                  comfortable navigating both technical and project aspects.
+                  I've got a knack for turning ideas into successful projects,
+                  and I'm excited to bring my skills to the table.
                 </p>
               </li>
 
@@ -95,17 +106,19 @@ const About = () => {
                   View Dribbble
                 </a>
                 <p>
-                  I'm a designer who loves making things look and feel great. Whether it's UI/UX or visual design, I'm all about creating experiences that are both beautiful and functional. I believe good design should be intuitive, easy to use, and stunning to look at. I'm always pushing myself to find that perfect balance between aesthetics, usability, and technical know-how.
+                  I'm a designer who loves making things look and feel great.
+                  Whether it's UI/UX or visual design, I'm all about creating
+                  experiences that are both beautiful and functional. I believe
+                  good design should be intuitive, easy to use, and stunning to
+                  look at. I'm always pushing myself to find that perfect
+                  balance between aesthetics, usability, and technical know-how.
                 </p>
               </li>
             </ul>
           </article>
         </PageWrapper>
 
-        <PageWrapper
-          className="mb-5"
-          aria-label="#"
-        >
+        <PageWrapper className="mb-5" aria-label="#">
           <article>
             <h4>EDUCATION</h4>
             <ul className="timeline">
@@ -123,7 +136,10 @@ const About = () => {
                   <Date /> <b>2023-2024</b>
                 </a>
                 <p>
-                  Spent 12 months at ALX Holberton, where I dived into software engineering and full-stack development. Learned by doing, and gained hands-on experience with cloud computing, agile methodologies, and collaborative project work
+                  Spent 12 months at ALX Holberton, where I dived into software
+                  engineering and full-stack development. Learned by doing, and
+                  gained hands-on experience with cloud computing, agile
+                  methodologies, and collaborative project work
                 </p>
               </li>
               <li>
@@ -140,7 +156,10 @@ const About = () => {
                   <Date /> <b>2020</b>
                 </a>
                 <p>
-                  Mastered full-stack development through Zero to Mastery, gaining expertise in building robust and efficient web applications from front-end to back-end, with a strong foundation in coding languages and development frameworks
+                  Mastered full-stack development through Zero to Mastery,
+                  gaining expertise in building robust and efficient web
+                  applications from front-end to back-end, with a strong
+                  foundation in coding languages and development frameworks
                 </p>
               </li>
               <li>
@@ -157,7 +176,12 @@ const About = () => {
                   <Date /> <b>2019 - 2024</b>
                 </a>
                 <p>
-                  Earned a Bachelor of Science degree in Agriculture from the University of Benin, laying a solid groundwork in agricultural sciences, research methods, and sustainable practices, with a keen interest in leveraging technology to drive agricultural innovation, including agritech solutions, precision farming, and data-driven decision making.{' '}
+                  Earned a Bachelor of Science degree in Agriculture from the
+                  University of Benin, laying a solid groundwork in agricultural
+                  sciences, research methods, and sustainable practices, with a
+                  keen interest in leveraging technology to drive agricultural
+                  innovation, including agritech solutions, precision farming,
+                  and data-driven decision making.{' '}
                 </p>
               </li>
               <li>
@@ -168,15 +192,15 @@ const About = () => {
                   aria-label="Design at california institute of the arts "
                   href="#"
                 >
-                  DESIGN <small>california institute of the arts
-
-                  </small>
+                  DESIGN <small>california institute of the arts</small>
                 </a>
                 <a className="float-right" tabIndex={-1}>
                   <Date /> <b>2024</b>
                 </a>
                 <p>
-                  Currently pursuing a degree in Design at California Institute of the Arts, exploring the intersection of creativity and technology.
+                  Currently pursuing a degree in Design at California Institute
+                  of the Arts, exploring the intersection of creativity and
+                  technology.
                 </p>
               </li>
               <li>
@@ -187,15 +211,16 @@ const About = () => {
                   aria-label="PYTHON "
                   href="#"
                 >
-                  PYTHON <small>replit school
-
-                  </small>
+                  PYTHON <small>replit school</small>
                 </a>
                 <a className="float-right" tabIndex={-1}>
                   <Date /> <b>2024</b>
                 </a>
                 <p>
-                  Currently getting a Certified Python Programmer certification from Replit, demonstrating expertise in Python programming languages, data structures, and software development best practices.
+                  Currently getting a Certified Python Programmer certification
+                  from Replit, demonstrating expertise in Python programming
+                  languages, data structures, and software development best
+                  practices.
                 </p>
               </li>
               <li>
@@ -215,10 +240,7 @@ const About = () => {
           </article>
         </PageWrapper>
 
-        <PageWrapper
-          className="mb-5"
-          aria-label="#"
-        >
+        <PageWrapper className="mb-5" aria-label="#">
           <article>
             <h4>WORK EXPERIENCE</h4>
             <ul className="timeline">
@@ -236,7 +258,8 @@ const About = () => {
                   <Date /> <b>2019</b>
                 </a>
                 <p>
-                  Selm Tech, a tech company specializing in creating power banks and developing tech solutions such as apps and websites.
+                  Selm Tech, a tech company specializing in creating power banks
+                  and developing tech solutions such as apps and websites.
                 </p>
               </li>
               <li>
@@ -253,7 +276,8 @@ const About = () => {
                   <Date /> <b>2018-2019</b>
                 </a>
                 <p>
-                  Worked as an intern graphic designer at TSL Nigeria, honing skills in visual communication and creative design processes.
+                  Worked as an intern graphic designer at TSL Nigeria, honing
+                  skills in visual communication and creative design processes.
                 </p>
               </li>
               <li>
@@ -270,7 +294,9 @@ const About = () => {
                   <Date /> <b>2019-2020</b>
                 </a>
                 <p>
-                  Worked as a tech intern at Fred Idemudia Accounting Firm, gaining practical experience in IT support and software applications.
+                  Worked as a tech intern at Fred Idemudia Accounting Firm,
+                  gaining practical experience in IT support and software
+                  applications.
                 </p>
               </li>
               <li>
@@ -287,7 +313,8 @@ const About = () => {
                   <Date /> <b>2020</b>
                 </a>
                 <p>
-                  Worked as a UI/UX designer at FirstClass Studio for 3 months, enhancing user experience and interface designs.
+                  Worked as a UI/UX designer at FirstClass Studio for 3 months,
+                  enhancing user experience and interface designs.
                 </p>
               </li>
               <li>
@@ -298,13 +325,16 @@ const About = () => {
                   aria-label="TOF Nation NGO"
                   href="#"
                 >
-                  COMMUNITY MANAGER & WEB DEVELOPER. <small>tof nation NGO</small>
+                  COMMUNITY MANAGER & WEB DEVELOPER.{' '}
+                  <small>tof nation NGO</small>
                 </a>
                 <a className="float-right" tabIndex={-1}>
                   <Date /> <b>2020 - Present</b>
                 </a>
                 <p>
-                  Currently working as the community manager and web developer for TOF Nation NGO, leading web projects and managing online community engagement.
+                  Currently working as the community manager and web developer
+                  for TOF Nation NGO, leading web projects and managing online
+                  community engagement.
                 </p>
               </li>
               <li>
@@ -321,7 +351,9 @@ const About = () => {
                   <Date /> <b>2021-2023</b>
                 </a>
                 <p>
-                  Worked as a software engineer at DotBob, focusing on developing and maintaining software solutions and applications.
+                  Worked as a software engineer at DotBob, focusing on
+                  developing and maintaining software solutions and
+                  applications.
                 </p>
               </li>
               <li>
@@ -338,7 +370,8 @@ const About = () => {
                   <Date /> <b>2021</b>
                 </a>
                 <p>
-                  Founded CheeSpace, a company that launched Chee Farmers Market, providing web publicity solutions for farmers.
+                  Founded CheeSpace, a company that launched Chee Farmers
+                  Market, providing web publicity solutions for farmers.
                 </p>
               </li>
               <li>
@@ -355,15 +388,13 @@ const About = () => {
                   <Date /> <b>2022</b>
                 </a>
                 <p>
-                  Worked as a contract web developer at Techopedia, contributing to web development projects and coding initiatives.
+                  Worked as a contract web developer at Techopedia, contributing
+                  to web development projects and coding initiatives.
                 </p>
               </li>
             </ul>
           </article>
         </PageWrapper>
-
-
-
       </PageSection>
 
       <PageWrapper>

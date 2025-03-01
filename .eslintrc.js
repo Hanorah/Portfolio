@@ -4,23 +4,28 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: ['airbnb', 'prettier', 'prettier/react'],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+  extends: ['airbnb', 'prettier'],
+  rules: {
+    'prettier/prettier': 'error',
+    'import/extensions': 'off',
+    'import/no-unresolved': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/jsx-no-useless-fragment': 'off',
   },
-  parser: '@babel/eslint-parser', // 🔥 Use Babel parser
+
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    requireConfigFile: false, // 🔥 No need for a separate Babel config
+    requireConfigFile: false,
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2020, // 🔥 Supports modern JS (e.g., class fields)
+    ecmaVersion: 2020,
     sourceType: 'module',
   },
   plugins: ['react', 'prettier'],
   rules: {
-    'prettier/prettier': ['error'],
-    'react/jsx-filename-extension': [0],
+    'prettier/prettier': 'error', // ✅ Ensure Prettier errors are flagged
+    'react/jsx-filename-extension': 'off', // ✅ Equivalent to [0]
+    'react/react-in-jsx-scope': 'off', // ✅ If using Next.js or React 17+
   },
 };

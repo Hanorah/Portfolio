@@ -160,7 +160,9 @@ const CursorStyle = styled.div<CursorStyleProps>`
       opacity: 0;
       z-index: 9222;
       transform: translate(-50%, -50%);
-      transition: opacity 0.2s ease-in-out, transform 0.5s ease-in-out;
+      transition:
+        opacity 0.2s ease-in-out,
+        transform 0.5s ease-in-out;
     }
 
     .cursor-dot {

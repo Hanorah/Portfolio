@@ -1,18 +1,23 @@
-import React, { useContext } from "react";
-import { Header } from "../Layout/style";
-import Link from "../ActiveLink";
-import AppContext from "../Utils/context";
-import { Logo, Moon, Icon } from "../Icons";
+import React, { useContext } from 'react';
+import { Header } from '../Layout/style';
+import Link from '../ActiveLink';
+import AppContext from '../Utils/context';
+import { Logo, Moon, Icon } from '../Icons';
 
 const Navbar = () => {
-  const { show, handleopen, setTheme, closeShow, theme } = useContext(AppContext);
+  const { show, handleopen, setTheme, closeShow, theme } =
+    useContext(AppContext);
 
   return (
     <Header>
       <nav className="navbar navbar-expand-lg bg-light navbar-light">
         <div className="container">
           {/* Logo */}
-          <Link href="https://portfolio-pco6.onrender.com/" className="navbar-brand" aria-label="Hanorah Home">
+          <Link
+            href="https://portfolio-pco6.onrender.com/"
+            className="navbar-brand"
+            aria-label="Hanorah Home"
+          >
             <Logo />
           </Link>
 
@@ -27,9 +32,16 @@ const Navbar = () => {
           </button>
 
           {/* Navbar Links */}
-          <div className={`collapse navbar-collapse ${show ? "show" : ""}`} id="collapsibleNavbar">
+          <div
+            className={`collapse navbar-collapse ${show ? 'show' : ''}`}
+            id="collapsibleNavbar"
+          >
             {/* Close Button for Mobile */}
-            <button className="d-block d-md-none close-nav" onClick={handleopen} type="button">
+            <button
+              className="d-block d-md-none close-nav"
+              onClick={handleopen}
+              type="button"
+            >
               <Icon />
             </button>
 
@@ -53,22 +65,50 @@ const Navbar = () => {
 
               {/* Other Navigation Links */}
               <li className="nav-item hover__bottom">
-                <Link href="/about" activeClassName="is-active" className="nav-link" id="cardHover" onClick={closeShow} aria-label="Go To About Page">
+                <Link
+                  href="/about"
+                  activeClassName="is-active"
+                  className="nav-link"
+                  id="cardHover"
+                  onClick={closeShow}
+                  aria-label="Go To About Page"
+                >
                   About
                 </Link>
               </li>
               <li className="nav-item hover__bottom">
-                <Link href="/projects" activeClassName="is-active" className="nav-link" id="cardHover" onClick={closeShow} aria-label="Go To Projects Page">
+                <Link
+                  href="/projects"
+                  activeClassName="is-active"
+                  className="nav-link"
+                  id="cardHover"
+                  onClick={closeShow}
+                  aria-label="Go To Projects Page"
+                >
                   Projects
                 </Link>
               </li>
               <li className="nav-item hover__bottom">
-                <Link href="/resume" activeClassName="is-active" className="nav-link" id="cardHover" onClick={closeShow} aria-label="Go To Resume Page">
+                <Link
+                  href="/resume"
+                  activeClassName="is-active"
+                  className="nav-link"
+                  id="cardHover"
+                  onClick={closeShow}
+                  aria-label="Go To Resume Page"
+                >
                   Resume
                 </Link>
               </li>
               <li className="nav-item hover__bottom">
-                <Link href="/contact" activeClassName="is-active" className="nav-link" id="cardHover" onClick={closeShow} aria-label="Go To Contact Page">
+                <Link
+                  href="/contact"
+                  activeClassName="is-active"
+                  className="nav-link"
+                  id="cardHover"
+                  onClick={closeShow}
+                  aria-label="Go To Contact Page"
+                >
                   Contact
                 </Link>
               </li>
@@ -78,13 +118,12 @@ const Navbar = () => {
                 <Link
                   href="#!"
                   className="nav-link nav-svg"
-                  aria-label={`Turn On ${theme === false ? "Light" : "Dark"} Mode`}
+                  aria-label={`Turn On ${theme === false ? 'Light' : 'Dark'} Mode`}
                   onClick={setTheme}
                 >
                   <Moon />
                 </Link>
               </li>
-
             </ul>
           </div>
         </div>

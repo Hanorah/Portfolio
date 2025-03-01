@@ -1,15 +1,16 @@
 const PROJECTS_DATA = [
   {
     title: 'Shadeum Clone',
-    description: 'Decentralization for everyone Fast, scalable, and forever fair.',
+    description:
+      'Decentralization for everyone Fast, scalable, and forever fair.',
     github: 'https://github.com/hanorah/shadeum',
-    about:
-      ' Shardeum is an EVM-based, truly decentralized L1.',
+    about: ' Shardeum is an EVM-based, truly decentralized L1.',
     link: 'https://shardeum.org/',
     imageUrl: 'https://i.ibb.co/T0XwFsQ/Screen-Recording-2020-05-06-at-3.gif',
     type: ['open-source', 'tools', 'project'],
     technologies: ['React', 'Redux Saga', 'Javascript', 'Firebase', 'Next.js'],
-  }, {
+  },
+  {
     title: 'Fizzi',
     description: 'Fizzi a fictional soda brand',
     github: 'https://github.com/hanorah',
@@ -19,7 +20,8 @@ const PROJECTS_DATA = [
     imageUrl: 'https://i.ibb.co/Xk7mZLf7/fizzi.jpg',
     type: ['open-source', 'tools', 'project'],
     technologies: ['React', 'Redux Saga', 'Javascript', 'Firebase', 'Next.js'],
-  }, {
+  },
+  {
     title: 'IVY',
     description: 'A healthcare website.',
     github: 'https://github.com/hanorah',
@@ -56,8 +58,7 @@ const PROJECTS_DATA = [
     title: 'Branding Company',
     description: 'A Branding company in Canada.',
     github: 'https://github.com/hanorah',
-    about:
-      'This is a digital brand identity company website.',
+    about: 'This is a digital brand identity company website.',
     link: 'https://hanorah.github.io/brand/',
     imageUrl: 'https://i.ibb.co/8jTdBWm/20240810140750.gif',
     type: ['open-source', 'tools', 'project'],
@@ -67,8 +68,7 @@ const PROJECTS_DATA = [
     title: 'Design Company',
     description: 'A Design and brand identity company in india.',
     github: 'https://github.com/hanorah',
-    about:
-      'This is a design and brand identity website.',
+    about: 'This is a design and brand identity website.',
     link: 'https://devopus.com/',
     imageUrl: 'https://i.ibb.co/8KFkPXK/20240810141820.gif',
     type: ['open-source', 'tools', 'project'],
@@ -78,8 +78,7 @@ const PROJECTS_DATA = [
     title: 'TISV',
     description: 'Digital Solutions Company',
     github: 'https://github.com/hanorah',
-    about:
-      'Digial solutions comapny in Canada and Nigeria .',
+    about: 'Digial solutions comapny in Canada and Nigeria .',
     link: 'https://www.tisv.digital/',
     imageUrl: 'https://i.ibb.co/1JcCyPr/20240810142233.gif',
     type: ['open-source', 'tools', 'project'],
@@ -89,8 +88,7 @@ const PROJECTS_DATA = [
     title: 'The Tailors Shop',
     description: 'A fashion design company.',
     github: 'https://github.com/hanorah',
-    about:
-      'put info.',
+    about: 'put info.',
     link: 'https://selmtech.github.io/zahir/',
     imageUrl: 'https://i.ibb.co/nCtqmqj/20240810144317.gif',
 
@@ -102,8 +100,7 @@ const PROJECTS_DATA = [
     title: 'Ecommerce Shoe Store',
     description: 'description.',
     github: 'https://github.com/hanorah',
-    about:
-      'put info.',
+    about: 'put info.',
     link: 'https://hanorah.github.io/selm/',
     imageUrl: 'https://i.ibb.co/tYhWx8G/20240810140649.gif',
     type: ['project'],
@@ -113,8 +110,7 @@ const PROJECTS_DATA = [
     title: 'Selm Technology',
     description: 'A tech solutions company.',
     github: 'https://github.com/hanorah',
-    about:
-      'put info.',
+    about: 'put info.',
     link: 'https://hanorah.github.io/selm/',
     imageUrl: 'https://i.ibb.co/N1F9PT1/20240810144433.gif',
     type: ['project'],
@@ -125,22 +121,20 @@ const PROJECTS_DATA = [
     title: 'THE CHEE SPACE',
     description: 'A tech and brand solutions company.',
     github: 'https://github.com/hanorah',
-    about:
-      'put info.',
+    about: 'put info.',
     link: 'https://hanorah.github.io/cheespace/',
     imageUrl: 'https://i.ibb.co/jyXptG3/20240810144124.gif',
-    type: ['project',],
+    type: ['project'],
     technologies: ['Javascript', 'Rollup', 'React'],
   },
   {
     title: 'The barbers shop',
     description: 'A barbing salon.',
     github: 'https://github.com/hanorah',
-    about:
-      'put info.',
+    about: 'put info.',
     link: 'https://hanorah.github.io/barber/',
     imageUrl: 'https://i.ibb.co/PgWwWQ6/20240810144016.gif',
-    type: ['project',],
+    type: ['project'],
     technologies: ['Javascript', 'Rollup', 'React'],
   },
   {
@@ -151,13 +145,14 @@ const PROJECTS_DATA = [
       'This is an e-commerce platform catered towards giving the best and fast experience for customers to buy products, we call it a frictionless process from start to finish.',
     link: 'https://github.com/hanorah',
     imageUrl: 'https://i.ibb.co/y60ZJMf/20240810140510.gif',
-    type: ['project',],
+    type: ['project'],
     technologies: ['Javascript', 'Rollup', 'React'],
   },
 
   {
     title: 'S.I.T (Skills, Income, and Technology Program)',
-    about: 'The Skills, Income, and Technology program focuses on equipping children with essential digital skills to empower their creativity and foster future opportunities in the tech space.',
+    about:
+      'The Skills, Income, and Technology program focuses on equipping children with essential digital skills to empower their creativity and foster future opportunities in the tech space.',
     description:
       'S.I.T teaches kids digital skills like web development, graphic design, and video editing, preparing them for future careers in technology. Through interactive workshops and hands-on learning, participants gain practical experience in using tools such as React, Next.js, and more, setting the foundation for real-world tech applications.',
     link: 'https://mytofnation/sit.com',
@@ -167,21 +162,17 @@ const PROJECTS_DATA = [
     technologies: ['Typescript', 'Rollup', 'React', 'Nextjs'],
   },
 
-
-
-
   {
     title: 'Magic',
     description: 'Delightful auth for Web3 onboarding',
-    about: "Onboard users new to crypto with just an email, phone number, or social login. One SDK for auth, wallet creation, and key management.",
-    link:
-      'https://magic.link',
-    imageUrl: 'https://i.ibb.co/1Q3331D/Screenshot-2023-08-02-at-8-21-59-PM.png',
+    about:
+      'Onboard users new to crypto with just an email, phone number, or social login. One SDK for auth, wallet creation, and key management.',
+    link: 'https://magic.link',
+    imageUrl:
+      'https://i.ibb.co/1Q3331D/Screenshot-2023-08-02-at-8-21-59-PM.png',
     type: ['others', 'project'],
     technologies: ['React', 'TypeScript', 'Nextjs', 'Javascript', 'GraphCMS'],
   },
-
-
 
   {
     title: 'Clinified',
@@ -194,9 +185,6 @@ const PROJECTS_DATA = [
     type: ['project'],
     technologies: ['Nuxt', 'Vue', 'Javascript', 'A11y'],
   },
-
-
-
 
   {
     title: '54gene',
@@ -215,13 +203,11 @@ const PROJECTS_DATA = [
     description: 'The gradient you have always wanted in a new tab',
     about:
       'Piggment is a curated collection of amazingly colored gradients for designers, developers, and smart creators over the world. now you can generate, explore, and save, easy CSS cross-browser gradient codes all in a new tab.',
-    link:
-      'https://chrome.google.com/webstore/detail/piggment-crafted-to-inspi/eifkhhlfjplpakoddkndkgjhfajnhffg',
+    link: 'https://chrome.google.com/webstore/detail/piggment-crafted-to-inspi/eifkhhlfjplpakoddkndkgjhfajnhffg',
     imageUrl: 'https://i.ibb.co/Pxm6yzy/Screenshot-2020-07-28-at-02-48-43.png',
     type: ['open-source', 'tools'],
     technologies: ['React', 'Context API', 'Javascript'],
   },
-
 
   {
     title: 'Zeedas',
@@ -246,8 +232,6 @@ const PROJECTS_DATA = [
     type: ['project'],
     technologies: ['Vue', 'Vuex', 'Javascript', 'CSS3 & Sass'],
   },
-
-
 
   {
     title: 'Lentora by NgCareers',
@@ -285,14 +269,11 @@ const PROJECTS_DATA = [
     technologies: ['HTML', '11ty', 'Javascript', 'CSS & Sass'],
   },
 
-
-
   {
     title: 'Nex AI',
-    description:
-      'The new way to tell stories',
+    description: 'The new way to tell stories',
     about:
-      "NEX builds new tools for digital media creation. We’re on a mission to augment human storytelling-- try our newest AI tools now!",
+      'NEX builds new tools for digital media creation. We’re on a mission to augment human storytelling-- try our newest AI tools now!',
     link: 'https://nex.art',
     imageUrl:
       'https://i.ibb.co/GtLWcwC/Screenshot-2024-01-16-at-7-55-21-PM.png',
@@ -323,12 +304,10 @@ const PROJECTS_DATA = [
     technologies: ['Vue', 'javascript', 'HTML & CSS'],
   },
 
-
   {
     title: 'DrugStoc',
     description: 'Empowering Pharmacies Toward a Healthier Africa.',
-    link:
-      'https://techcrunch.com/2021/11/14/nigerian-e-health-pharmaceutical-distribution-startup-drugstoc-secures-4-4-million-series-a-funding-embarks-on-expansion-drive/',
+    link: 'https://techcrunch.com/2021/11/14/nigerian-e-health-pharmaceutical-distribution-startup-drugstoc-secures-4-4-million-series-a-funding-embarks-on-expansion-drive/',
     about:
       'Drugstoc makes use of unmatched technology, supply chain innovation, financial solutions, and product knowledge to unlock access to medications in emerging Economies.',
     imageUrl:
@@ -336,8 +315,6 @@ const PROJECTS_DATA = [
     type: ['project', 'others'],
     technologies: ['Nextjs (React)', 'Javascript'],
   },
-
-
 
   {
     title: 'Developp by Tunga',
@@ -412,8 +389,6 @@ const PROJECTS_DATA = [
     type: ['open-source', 'tools'],
     technologies: ['Typescript', 'Rollup', 'React'],
   },
-
-
 ];
 
 export default PROJECTS_DATA;
