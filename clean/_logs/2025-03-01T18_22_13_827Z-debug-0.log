@@ -5,15 +5,15 @@
 4 silly config load:file:C:\Users\HP\Desktop\portfolio projects\PORTFOLIO SITE\.npmrc
 5 silly config load:file:C:\Users\HP\.npmrc
 6 silly config load:file:C:\Users\HP\AppData\Roaming\npm\etc\npmrc
-7 verbose title npm exec prettier --write .
-8 verbose argv "exec" "--" "prettier" "--write" "."
-9 verbose logfile logs-max:10 dir:C:\Users\HP\Desktop\portfolio projects\PORTFOLIO SITE\clean\_logs\2025-03-01T10_55_09_611Z-
-10 verbose logfile C:\Users\HP\Desktop\portfolio projects\PORTFOLIO SITE\clean\_logs\2025-03-01T10_55_09_611Z-debug-0.log
+7 verbose title npm run build
+8 verbose argv "run" "build"
+9 verbose logfile logs-max:10 dir:C:\Users\HP\Desktop\portfolio projects\PORTFOLIO SITE\clean\_logs\2025-03-01T18_22_13_827Z-
+10 verbose logfile C:\Users\HP\Desktop\portfolio projects\PORTFOLIO SITE\clean\_logs\2025-03-01T18_22_13_827Z-debug-0.log
 11 silly logfile start cleaning logs, removing 2 files
 12 silly logfile done cleaning log files
 13 verbose cwd C:\Users\HP\Desktop\portfolio projects\PORTFOLIO SITE
 14 verbose os Windows_NT 10.0.19045
 15 verbose node v21.6.1
 16 verbose npm  v10.9.1
-17 verbose exit 0
-18 info ok
+17 verbose exit 1
+18 verbose code 1
