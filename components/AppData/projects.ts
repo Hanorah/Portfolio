@@ -6,7 +6,7 @@ const PROJECTS_DATA = [
     github: 'https://github.com/hanorah/shadeum',
     about: ' Shardeum is an EVM-based, truly decentralized L1.',
     link: 'https://shardeum.org/',
-    imageUrl: 'https://i.ibb.co/T0XwFsQ/Screen-Recording-2020-05-06-at-3.gif',
+    imageUrl: 'https://i.ibb.co/s9rmgCym/1.jpg',
     type: ['open-source', 'tools', 'project'],
     technologies: ['React', 'Redux Saga', 'Javascript', 'Firebase', 'Next.js'],
   },
