@@ -123,6 +123,11 @@ const Wrapper = styled.div<{ size: ISideBarModal['size'] }>`
     z-index: 999999;
     transition: all 0.3s linear;
     padding-bottom: 20px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 1.5rem;
+    }
   }
 `;
 
@@ -154,41 +159,28 @@ const Header = styled.div`
   a:hover {
     color: var(--primary-color);
   }
-`;
 
-const Content = styled.div`
-  padding: 20px 30px;
-
-  h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-
-  .description {
-    font-size: 1rem;
-    color: #fff;
+  @media (max-width: 768px) {
+    padding: 10px 20px;
   }
 `;
 
 const SectionTitle = styled.h4`
   margin-top: 20px;
   font-size: 1.2rem;
-  color:rgb(113, 113, 113) ;
+  color: rgb(113, 113, 113);
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
-const TechList = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 5px;
-`;
+const Content = styled.div`
+  padding: 20px 30px;
 
-const TechItem = styled.span`
-  background: rgba(255, 255, 255, 0.58);
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  color: #333333;
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
 `;
 
 const StyledImage = styled.img`
@@ -197,33 +189,51 @@ const StyledImage = styled.img`
   margin: 10px 0;
   border-radius: 10px;
   object-fit: cover;
+
+  @media (max-width: 768px) {
+    max-height: 20vh;
+  }
+`;
+
+const TechList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
+
+const TechItem = styled.li`
+  background: var(--primary-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
 `;
 
 const StyledLink = styled.a`
-  display: inline-block;
-  margin-top: 5px;
-  color:rgb(153, 255, 0)
-  font-weight: bold;
+  color: var(--primary-color);
   text-decoration: none;
-  transition: 0.3s;
+  font-weight: bold;
+  display: inline-block;
+  margin: 5px 0;
 
   &:hover {
-    color:rgb(4, 60, 21);
+    text-decoration: underline;
   }
 `;
 
 const ProjectButton = styled.a`
   display: block;
-  margin: 20px auto;
-  text-align: center;
   background: var(--primary-color);
-  color: #fff;
-  padding: 12px 15px;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
   border-radius: 5px;
-  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  transition: 0.3s;
+  margin: 20px auto;
   max-width: 200px;
 
   &:hover {
